@@ -52,12 +52,14 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven { url "https://maven.fullstory.com" }
     }
 
     dependencies {
         classpath "com.android.tools.build:gradle:$gradleVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
+        classpath 'com.fullstory:gradle-plugin-local:1.2.0'
     }
 }
 
